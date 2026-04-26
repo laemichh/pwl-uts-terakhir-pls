@@ -1,0 +1,46 @@
+buka terminal
+Remove-Item -Recurse -Force .git
+git remote remove origin
+git remote -v (cek masih muncul remotenya atau ngga, klo ngga ada berarti aman)
+
+composer install, tunggu sampai selesai (bismilah ga ada error)
+buka .env.example
+selesaikan perintah yang di .env.example, lalu buka ini lagi
+
+ubah nama file .env.enxample jadi .env
+php artisan key:generate
+
+php artisan make:migration, lalu kasi nama sesuai soal. misal disoal disuruh bikin table produk, admin, stock menggunakan migration. berarti php artisan make:migration [enter] produk [enter], dst
+
+php artisan make:model kasi nama sesuai migration tadi, misal tadi kita udah bikin migration produk, admin, stock, berarti modelnya kita bikin produk, admin, stock juga. php artisan make:model [enter] produk [enter], dst
+
+buka folder app\https\controller harusnya nanti muncul ProdukController, AdminController, StockController. nah kalau disoal diminta "buatlah produk, admin, stock memiliki CRUD/Create, Read, Update, Delete" berarti semuanya data yang di mahasasiswaController itu dipaste ke masing" controller
+
+-------------------------------------------------------------
+
+klo udah selesai, semua comment yang ijo" dihapus, file ini(baca ini dulu) juga dihapus biar ngga ketahuan bapak(ya walaupun bapak udah tau si 😊)
+
+sekarang kita akan setting github
+
+buka control panel
+ctrl + f, cari credential manager
+pilih windows credential
+cari git:https://github.com
+tekan remove
+
+buka github
+tekan new
+kasi nama
+tekan create repository
+
+buka terminal(jangan lupa, cd ke folder laravel)
+git init
+git config user.name ('nama')
+git config user.email ('email@gmail.com)
+git config --global user.name ('nama')
+git config --global user.email ('email@gmail.com)
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin link_github (ini setelah create repository nanti kan muncul halaman, nah itu copy semua yang bagian git remote add origin)
+git push -u origin main
