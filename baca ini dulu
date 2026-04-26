@@ -5,6 +5,9 @@ git remote -v (cek masih muncul remotenya atau ngga, klo ngga ada berarti aman)
 
 ganti nama foldernya sesuai yang diinginkan
 
+cd..
+cd nama_folder_yang_udah_diubah
+
 composer install, tunggu sampai selesai (bismilah ga ada error)
 buka .env.example
 selesaikan perintah yang di .env.example, lalu buka ini lagi
@@ -22,7 +25,9 @@ buka folder app\https\controller harusnya nanti muncul ProdukController, AdminCo
 
 klo udah selesai, semua comment yang ijo" dihapus, file ini(baca ini dulu) juga dihapus biar ngga ketahuan bapak(ya walaupun bapak udah tau si 😊)
 
-sekarang kita akan setting github
+-------------------------------------------------------------
+
+sekarang kita akan upload github
 
 buka control panel
 ctrl + f, cari credential manager
