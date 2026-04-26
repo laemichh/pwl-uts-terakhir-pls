@@ -3,6 +3,8 @@ Remove-Item -Recurse -Force .git
 git remote remove origin
 git remote -v (cek masih muncul remotenya atau ngga, klo ngga ada berarti aman)
 
+ganti nama foldernya sesuai yang diinginkan
+
 composer install, tunggu sampai selesai (bismilah ga ada error)
 buka .env.example
 selesaikan perintah yang di .env.example, lalu buka ini lagi
